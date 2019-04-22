@@ -117,7 +117,7 @@ public class AddrController {
 	/**
 	 * 修改用户下面的外部分类
 	 * 根据老分类找到所有的中间表的集合
-	 * 再循环修改新分类名字
+	 * 再循环修改新分类名字测试
 	 * @param typename
 	 * @param oldtypename
 	 * @param userId
