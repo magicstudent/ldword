@@ -1,7 +1,8 @@
 package com.bootstrap.ldword.model.dao.user;
 
-import cn.gson.oasys.model.entity.user.Dept;
-import cn.gson.oasys.model.entity.user.User;
+
+import com.bootstrap.ldword.model.entity.user.Dept;
+import com.bootstrap.ldword.model.entity.user.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

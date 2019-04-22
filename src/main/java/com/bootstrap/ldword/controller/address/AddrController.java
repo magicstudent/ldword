@@ -1,23 +1,19 @@
 package com.bootstrap.ldword.controller.address;
 
-import cn.gson.oasys.common.formValid.BindingResultVOUtil;
-import cn.gson.oasys.common.formValid.ResultEnum;
-import cn.gson.oasys.common.formValid.ResultVO;
-import cn.gson.oasys.mappers.AddressMapper;
-import cn.gson.oasys.model.dao.address.AddressDao;
-import cn.gson.oasys.model.dao.address.AddressUserDao;
-import cn.gson.oasys.model.dao.notedao.AttachService;
-import cn.gson.oasys.model.dao.notedao.AttachmentDao;
-import cn.gson.oasys.model.dao.user.UserDao;
-import cn.gson.oasys.model.entity.note.Attachment;
-import cn.gson.oasys.model.entity.note.Director;
-import cn.gson.oasys.model.entity.note.DirectorUser;
-import cn.gson.oasys.model.entity.user.User;
-import cn.gson.oasys.services.address.AddreddUserService;
-import cn.gson.oasys.services.address.AddressService;
-import cn.gson.oasys.services.file.FileServices;
-import cn.gson.oasys.services.mail.MailServices;
-import cn.gson.oasys.services.process.ProcessService;
+
+import com.bootstrap.ldword.mappers.AddressMapper;
+import com.bootstrap.ldword.model.dao.address.AddressDao;
+import com.bootstrap.ldword.model.dao.address.AddressUserDao;
+import com.bootstrap.ldword.model.dao.notedao.AttachService;
+import com.bootstrap.ldword.model.dao.notedao.AttachmentDao;
+import com.bootstrap.ldword.model.dao.user.UserDao;
+import com.bootstrap.ldword.model.entity.note.DirectorUser;
+import com.bootstrap.ldword.model.entity.user.User;
+import com.bootstrap.ldword.services.address.AddreddUserService;
+import com.bootstrap.ldword.services.address.AddressService;
+import com.bootstrap.ldword.services.file.FileServices;
+import com.bootstrap.ldword.services.mail.MailServices;
+import com.bootstrap.ldword.services.process.ProcessService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.github.stuxuhai.jpinyin.PinyinException;
@@ -67,7 +63,7 @@ public class AddrController {
 	@Autowired
 	FileServices fileServices;
 	@Autowired
-	 AttachService attachService;
+	AttachService attachService;
 	@Autowired
 	AttachmentDao atDao;
 	@Autowired
